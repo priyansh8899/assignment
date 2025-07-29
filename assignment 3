@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include <conio.h>
+
+main() 
+{
+    float angle1, angle2, thirdAngle;
+    clrscr();
+    printf("Enter first angle: ");
+    scanf("%f", &angle1);
+    
+    printf("Enter second angle: ");
+    scanf("%f", &angle2);
+    
+    thirdAngle = 180 - (angle1 + angle2);
+    printf("The third angle is: %.2f", thirdAngle);
+    getch();
+    return 0;
+}

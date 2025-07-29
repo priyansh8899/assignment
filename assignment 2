@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<conio.h>
+main() {
+    float baseSalary, hraPercent, daPercent, taPercent;
+    float hraAmount, daAmount, taAmount, grossSalary;
+
+    printf("Enter base salary:");
+    scanf("%f",&baseSalary);
+
+    printf("Enter HRA percentage:");
+    scanf("%f",&hraPercent);
+
+    printf("Enter DA percentage:");
+    scanf("%f",&daPercent);
+
+    printf("Enter TA percentage:");
+    scanf("%f",&taPercent);
+
+    hraAmount = (hraPercent / 100) * baseSalary;
+    daAmount = (daPercent / 100) * baseSalary;
+    taAmount = (taPercent / 100) * baseSalary;
+    
+    grossSalary = baseSalary + hraAmount + daAmount + taAmount;
+    printf("Gross Salary: %.2f\n", grossSalary);
+    getch();
+    return 0;
+}
